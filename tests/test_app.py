@@ -24,7 +24,7 @@ class AppTestCase(unittest.TestCase):
             response = self.client.get("/")
 
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Your Name", response.data)
+        self.assertIn(b"Tanya Porwal", response.data)
         self.assertIn(b"1.0.0", response.data)
 
     def test_health_check(self):

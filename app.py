@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     return render_template(
         "index.html",
-        app_name=os.getenv("APP_NAME", "Your Name"),
+        app_name=os.getenv("APP_NAME", "Tanya Porwal"),
         app_version=os.getenv("APP_VERSION", "1.0.0"),
     )
 
